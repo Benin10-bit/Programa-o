@@ -1,0 +1,29 @@
+body{
+    background-color:#2E2E2E ;/*Muda a cor do fundo do site*/
+    text-align: center;/*Alinhamento do texto*/
+    
+}
+h1{/*Estilização do Título de hierarquia 1*/
+    font-size: 20pt; /*Tamanho da Fonte*/
+    font-family: "Roboto", sans-serif;/*Estilização da fonte*/
+    color: aliceblue;/*Cor da fonte*/
+    padding: 20px;/*Respiro da página*/
+    margin: 0px;/*tamanho da margem*/
+    
+}
+div{/*Estilização das divs*/
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #1A1A1A;
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;/*Alinhamento do texto*/
+    outline: none;
+    border: none;
+}

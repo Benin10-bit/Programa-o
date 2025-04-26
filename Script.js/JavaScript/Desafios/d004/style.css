@@ -1,0 +1,29 @@
+body{
+    background-color: #1E1E1E;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+hr{
+    margin-bottom: 25px;
+}
+div{/*FUNDO*/
+    background-color: #4CAF50;
+    /*FONTE*/
+    font-weight: 900;
+    font-size: 20px;
+    /*TAMANHO*/
+    height: 60px;
+    line-height: 60px;
+    width: 150px;
+    /*Borda*/
+    border-radius: 10px;
+    /*Transição*/
+    transition: all 0.2s ease;
+    /*POS*/
+    margin: 0 auto;
+    /*Configuração de cursor*/
+    cursor: pointer;
+}

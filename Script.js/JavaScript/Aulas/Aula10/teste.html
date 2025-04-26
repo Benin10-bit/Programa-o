@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interatividade no Botão</title>
+    <style>
+        /* Estilo inicial do botão */
+        #meuBotao {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Transição suave */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="meuBotao">Passe o Mouse</button>
+
+    <script>
+        var botao = document.getElementById("meuBotao");
+
+        // Evento ao passar o mouse
+        botao.addEventListener("mouseenter", function() {
+            botao.style.backgroundColor = "#005f73"; // Nova cor de fundo
+            botao.style.color = "#FFD700"; // Muda a cor do texto
+            botao.style.transform = "scale(1.1)"; // Aumenta o tamanho
+        });
+
+        // Evento ao tirar o mouse
+        botao.addEventListener("mouseleave", function() {
+            botao.style.backgroundColor = "#008CBA"; // Restaura cor original
+            botao.style.color = "white"; // Restaura a cor do texto
+            botao.style.transform = "scale(1)"; // Retorna ao tamanho normal
+        });
+    </script>
+
+</body>
+</html>

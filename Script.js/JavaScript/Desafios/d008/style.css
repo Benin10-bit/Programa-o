@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+input{
+    height: 15dvh;
+    width: 30dvh;
+    font-size: 3dvh;
+    border: aliceblue;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+div{
+    margin-top: 2dvh;
+}

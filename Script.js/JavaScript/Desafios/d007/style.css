@@ -1,0 +1,32 @@
+/*Configurações Gerais*/
+body{
+    font-family: 'Roboto',sans-serif;
+    color: aliceblue;
+    font-size: 3dvh;
+    background-color: #0D0D0D;
+    text-align: center;
+}
+hr{
+    max-width: 35dvh;
+    margin-top: -1dvh;
+}
+input{
+    background-color: #6A0DAD;
+    color: aliceblue;
+    border: none;
+    border-radius: 1dvh;
+    font-size: 3dvh;
+    font-weight: bold;
+    margin-top: 10dvh;
+    width: 35dvh;
+    height: 13dvh;
+    transition: all 0.3s ease;
+}
+div{
+    margin-top: 3dvh;
+}
+/*Centralizar*/
+.container{
+    display: flex;
+    justify-content: center;
+}

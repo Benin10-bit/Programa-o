@@ -1,0 +1,19 @@
+
+div{
+    color: aliceblue;
+    background-color: rgb(42, 149, 225);
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}

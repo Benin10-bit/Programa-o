@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="model.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section class="main-box">
+        <div class="ano">
+            <p>Ano de nascimento:</p>
+            <input type="number" name="" id="num">
+        </div>
+        <div class="sexo">
+            Sexo:
+            <input type="radio" name="sexo" id="m" checked>
+            <p>Masculino</p>
+            <input type="radio" name="sexo" id="f">
+            <p>Feminino</p>
+        </div>
+        <input  id="button" type="button" value="Verificar" onclick="verificar()">
+        <div id="res">
+            Coloque os valores acima para começar
+        </div>
+
+
+    </section>
+    <footer>
+        <p class="copyright">
+           &copy; Vai si fuder
+        </p>
+    </footer>    
+
+    <script src="model.js"></script>
+</body>
+</html>

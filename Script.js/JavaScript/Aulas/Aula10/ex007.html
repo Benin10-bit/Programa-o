@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="shortcut icon" href="ico/Calculator_30001.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font:  bold 18pt 'Roboto';
+            color: rgb(223, 228, 233);
+            background-color: rgb(33, 34, 34);
+        }
+        div#res{
+            color: aliceblue;
+            font-size: 15pt;
+            font-family: 'Roboto', sans-serif ;
+            font-style: italic;
+            position: relative;
+            top: 100px
+        }
+        input#meuBotao{
+            font-size: 10pt;
+            font-family: 'Roboto', sans-serif ;
+            font-style: bold;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 75px;
+            position: relative;
+            left: -163px;
+            top: 50px
+            
+        }
+        input#n1{
+            font-size: 12pt;
+            font-family: 'Roboto', sans-serif ;
+            font-style: bold;
+            border-radius: 10px;
+            border-color: rgb(58, 60, 60);
+            width: 100px;
+            
+        }
+        input#n2{
+            font-size: 12pt;
+            font-family: 'Roboto', sans-serif ;
+            font-style: bold;
+            border-radius: 10px;
+            border-color: rgb(33, 34, 34);
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <hr>
+<!--Caixas de pergunta e o botão-->
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" id="meuBotao" value="Somar">
+    <div id = 'res'>
+        Resultado
+    </div>
+
+    <script>
+//variáveis
+        var btt = document.getElementById('meuBotao')
+//Listener de evento
+        btt.addEventListener('mouseenter', Entrar)
+        btt.addEventListener('mouseout', Sair)
+        btt.addEventListener('click', Somar)
+//Função para mudar o botão quando o mouse passar
+        function Entrar(){
+            btt.style.background = '#484949'
+            btt.style.transform = 'scale(1.1)'
+        }
+        //Função para retornar ao normal
+        function Sair(){
+            btt.style.background = 'white'
+            btt.style.transform = 'scale(1)'
+
+        }
+//Função para soma
+        function Somar(){
+            var num1 = document.getElementById('n1')
+            var num2 = document.getElementById('n2')
+            var res = document.getElementById('res')
+            var soma = Number(num1.value) + Number(num2.value)
+            res.innerHTML = `O resultado é ${soma}`
+           }
+    </script>
+</body>
+</html>

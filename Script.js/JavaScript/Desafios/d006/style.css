@@ -1,0 +1,27 @@
+body{
+    background-color: #0D0D0D;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+hr{
+    max-width: 33dvh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+div#botao{
+    background-color: #6A0DAD;
+    font-size: 3dvh;
+    margin-top: 15dvh;
+    height: 15dvh;
+    line-height: 15dvh;
+    width: 25dvh;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+div#resultado{
+    font-size: 3dvh;
+    margin-top: 4dvh;
+}

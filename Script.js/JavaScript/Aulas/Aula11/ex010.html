@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>DETRAN - Verificação de Multa</title>
+    <style>
+        body {
+            background-color: #52775e;
+            color: #ffffff;
+            font-size: 15pt;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        input#vel {
+            border-radius: 10px;
+            font: normal 15pt 'Roboto';
+            padding: 5px;
+            width: 150px;
+            text-align: center;
+            border: none;
+            outline: none;
+        }
+        input#btt {
+            color: #eefff3;
+            background-color: #72987e;
+            border: none;
+            border-radius: 10px;
+            margin-left: 10px;
+            font: bold 12pt 'Roboto';
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        input#btt:hover {
+            transform: scale(1.1);
+            background-color: #32553d;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fui multado?</h1>
+    <hr>
+    <input type="number" name="vel" id="vel" placeholder="velocidade...">
+    <input type="button" value="Verificar" id="btt">
+    <div id="resultado"></div>
+
+    <script>
+        const bt = document.getElementById('btt');
+const resultado = document.getElementById('resultado');
+
+bt.addEventListener('click', () => {
+    const velocidade = Number(document.getElementById('vel').value);
+    
+    if (isNaN(velocidade) || document.getElementById('vel').value.trim() === '') {
+        resultado.textContent = 'Por favor, insira uma velocidade válida.';
+        resultado.style.color = '#ffcc00';
+        return;
+    }
+
+    if (velocidade <= 60) {
+        resultado.textContent = 'Tudo certo! Velocidade dentro do limite.';
+        resultado.style.color = '#4dff88';
+    } else if (velocidade <= 60 * 1.2) {
+        resultado.textContent = 'Você foi multado em R$130,16! Velocidade acima do limite.';
+        resultado.style.color = '#ff4d4d';
+    } else if (velocidade <= 60 * 1.5) {
+        resultado.textContent = 'Você foi multado em R$195,23! Velocidade acima do limite.';
+        resultado.style.color = '#ff4d4d';
+    } else {
+        resultado.textContent = 'Você foi multado em R$880,41! Velocidade acima do limite.';
+        resultado.style.color = '#ff4d4d';
+    }
+});
+
+    </script>
+</body>
+</html>

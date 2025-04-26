@@ -1,0 +1,12 @@
+times = ("Botafogo", "Palmeiras", "Flamengo", "Fortaleza", "Internacional","São Paulo", "Corinthians", "Bahia", "Cruzeiro", "Vasco da Gama","Vitória", "Atlético Mineiro", "Fluminense", "Grêmio", "Red Bull Bragantino","Juventude", "Athletico Paranaense", "Criciúma", "Atlético Goianiense", "Cuiabá")
+print('TABELA DO BRASILEIRÃO 2024:')
+for c in times:
+    print(c)
+print('-=-'*30)
+print(f'Os 5 primeiros são: {times[:6]}')
+print('-=-'*30)
+print(f'Os 5 últimos são: {times[-5:]}')
+print('-=-'*30)
+print(f'Os times em ordem alfabética são: {sorted(times)}')
+print('-=-'*30)
+print(f'O Flamengo está na {times.index('Flamengo')+1}° posição')

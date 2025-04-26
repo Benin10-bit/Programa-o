@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(93, 56, 186, 0.932);/*Dá cor ao fundo*/
+            color:aliceblue;/*Determina a cor da fonte*/
+            font: normal 20pt Arial;/*Estiliza a fonte*/
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite para mim o seu nome: ')//Atribui a uma variável o valor de prompt
+        document.write(`Olá, <strong>${nome.toUpperCase()}<strong>! Seu nome tem ${nome.length} letras. <br/>`)//Escreve a quantidade de letras que o prompt possui
+        document.write('Você tem um nome muito bonito !')
+    </script>
+</body>
+</html>
